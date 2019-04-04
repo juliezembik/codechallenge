@@ -17,24 +17,5 @@ public class GadgetServiceImpl implements GadgetService {
         this.gadgetRepository = gadgetRepository;
     }
 
-    @Override
-    public void createGadget(CreateGadgetRequest createGadgetRequest) {
-        this.gadgetRepository.save(new GadgetEntity(createGadgetRequest.getName()));
-    }
-
-    @Override
-    public List<GadgetResponse> findAll() {
-        List<GadgetResponse> response = new ArrayList<>();
-
-
-        List<GadgetEntity> entities = this.GadgetRepository.findAll();
-
-        for (GadgetEntity entity : entities) {
-            response.add(new GadgetResponse(entity.getName()));
-        }
-
-        return response;
-    }
-
 
 }
