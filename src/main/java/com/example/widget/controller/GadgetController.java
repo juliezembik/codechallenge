@@ -28,6 +28,8 @@ public class GadgetController {
 
     }
 
+    // this maps over the gadget and returns a list.
+    // findAll() method does not work, needs to be overridden.
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<GadgetResponse> getGadgets() { return this.gadgetService.findAll(); }

@@ -4,7 +4,7 @@ public class GadgetResponse {
     private String name;
     private Long widgetId;
 
-    public GadgetResponse() {
+    public GadgetResponse(String name) {
     }
 
     public GadgetResponse(String name, long widgetId) {

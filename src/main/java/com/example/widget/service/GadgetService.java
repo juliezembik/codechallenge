@@ -6,7 +6,6 @@ import com.example.widget.dto.GadgetResponse;
 import java.util.List;
 
 public interface GadgetService {
-
     void createGadget(CreateGadgetRequest createGadgetRequest);
 
     List<GadgetResponse> findAll();
