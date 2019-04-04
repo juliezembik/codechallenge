@@ -23,7 +23,7 @@ public class GadgetController {
     //this creates gadget
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void createGadget (@Valid @RequestBody CreateGadgetRequest createGadgetRequest) {
+    public void createGadget(@Valid @RequestBody CreateGadgetRequest createGadgetRequest) {
         this.gadgetService.createGadget(createGadgetRequest);
 
     }
